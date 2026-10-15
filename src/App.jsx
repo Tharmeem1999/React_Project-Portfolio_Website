@@ -7,6 +7,7 @@ import SkillsExperienceSection from "./components/SkillsExperienceSection";
 import RecommendationSection from "./components/RecommendationsSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+import "./App.css";
 
 const App = () => {
   return (
