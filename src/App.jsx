@@ -12,7 +12,6 @@ const App = () => {
   return (
     <ThemeProvider>
       <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-        App content.
         <Navbar />
         <ScrollDots />
         <div id="hero"><Hero /></div>
