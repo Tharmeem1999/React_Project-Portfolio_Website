@@ -1,5 +1,3 @@
-import { Section } from "lucide-react";
-
 const sections = ["hero", "projects", "skills", "recommendations", "contact"]
 
 const ScrollDots = () => {
