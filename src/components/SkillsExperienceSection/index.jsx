@@ -1,6 +1,28 @@
 import SkillCard from "./SkillCard";
 import ExperienceItem from "./ExperienceItem";
 
+import {
+    FaReact,
+    FaHtml5,
+    FaCss3Alt,
+    FaNodeJs,
+    FaPython,
+    FaGitAlt
+} from "react-icons/fa";
+import { SiFlutter, SiMongodb, SiTailwindcss } from "react-icons/si";
+
+const skills = [
+    { name: "React", icon: <FaReact className="text-blue-500" /> },
+    { name: "HTML5", icon: <FaHtml5 className="text-orange-600" /> },
+    { name: "CSS3", icon: <FaCss3Alt className="text-blue-600" /> },
+    { name: "Node.js", icon: <FaNodeJs className="text-green-600" /> },
+    { name: "Python", icon: <FaPython className="text-yellow-500" /> },
+    { name: "Flutter", icon: <SiFlutter className="text-blue-400" /> },
+    { name: "MongoDB", icon: <SiMongodb className="text-green-700" /> },
+    { name: "Tailwind", icon: <SiTailwindcss className="text-cyan-500" /> },
+    { name: "Git", icon: <FaGitAlt className="text-red-500" /> },
+];
+
 const SkillsExperienceSection = () => {
     return (
         <section className="min-h-screen py-20">
@@ -14,6 +36,15 @@ const SkillsExperienceSection = () => {
                 {/* Skills */}
                 <div>
                     <h4 className="text-2xl font-semibold mb-4">Skills</h4>
+                    <div className="grid grid-cols-3 gap-6">
+                        {skills.map((skill, idx) => (
+                            <SkillCard
+                                key={idx}
+                                icon={skill.icon}
+                                name={skill.name}
+                            />
+                        ))}
+                    </div>
                 </div>
                 {/* Experience Timeline */}
                 <div>
