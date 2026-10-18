@@ -43,7 +43,7 @@ const Hero = () => {
                 </div>
                 <div className="absolute bottom-[-20px] left-[-20px] bg-white dark:bg-gray-700 p-2 rounded-full shadow-md">
                     <img
-                        src="public/images/hero/flutter.svg"
+                        src="public/images/hero/convex.svg"
                         alt="Flutter"
                         className="w-8 h-8"
                     />
