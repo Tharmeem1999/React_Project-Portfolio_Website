@@ -4,16 +4,22 @@ import ExperienceItem from "./ExperienceItem";
 const SkillsExperienceSection = () => {
     return (
         <section className="min-h-screen py-20">
-            <h1>SkillsExperienceSection Section.</h1>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley,
-                the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and
-                scrambled it to make dummy text for Letraset's Body Type sheets.
-                It has survived not only many decades, but also the leap into electronic typesetting,
-                remaining essentially unchanged. It was popularised thanks to these sheets and more recently
-                with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
-            </p>
+            <h2 className="text-3xl font-semibold text-center">
+                Skills & Experience
+            </h2>
+            <h3 className="text-4xl font-bold text-center mb-16 text-blue-600 dark: dark:text-blue-400">
+                What I Do & Where I've Been
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                {/* Skills */}
+                <div>
+                    <h4 className="text-2xl font-semibold mb-4">Skills</h4>
+                </div>
+                {/* Experience Timeline */}
+                <div>
+                    <h4 className="text-2xl font-semibold mb-4">Experience</h4>
+                </div>
+            </div>
         </section>
     );
 };
