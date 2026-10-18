@@ -4,17 +4,19 @@ import TestimonialCard from "./TestimonialCard";
 
 const RecommendationSection = () => {
     return (
-        <section className="min-h-screen py-20">
-            <h1>RecommendationsSection Section.</h1>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley,
-                the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and
-                scrambled it to make dummy text for Letraset's Body Type sheets.
-                It has survived not only many decades, but also the leap into electronic typesetting,
-                remaining essentially unchanged. It was popularised thanks to these sheets and more recently
-                with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
-            </p>
+        <section className="min-h-screen py-20 px-4 text-center bg-gray-100 dark:bg-gray-900">
+            <h2 className="text-3xl font-semibold text-gray-800 dark:text-white">
+                Testimonials
+            </h2>
+            <h3 className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-16">
+                What People Say
+            </h3>
+
+            {/* Recommendation Box */}
+
+            {/* Navigation Arrow */}
+
+            {/* Logos */}
         </section>
     );
 };
