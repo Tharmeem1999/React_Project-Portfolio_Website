@@ -1,16 +1,77 @@
-# React + Vite
+# Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, single-page portfolio for showcasing projects, technical skills, experience, recommendations, and contact information. Built with React and Vite, with Tailwind CSS styling and a persistent light/dark theme.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive navigation with links to each portfolio section and a mobile menu
+- Light and dark themes, with the selected theme saved in browser storage
+- Project gallery with category filters
+- Skills grid and experience timeline
+- Testimonial carousel with previous/next navigation and company logos
+- Contact section and footer navigation
+- Smooth scrolling between sections
 
-## React Compiler
+## Tech stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite 8
+- Tailwind CSS 4
+- Lucide React and React Icons
+- ESLint
 
-## Expanding the ESLint configuration
+## Getting started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js and npm
+
+### Install and run
+
+```bash
+git clone https://github.com/Tharmeem1999/React_Project-Portfolio_Website.git
+cd React_Project-Portfolio_Website
+npm install
+npm run dev
+```
+
+Open the local URL printed by Vite in your browser.
+
+## Available scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the Vite development server |
+| `npm run build` | Build the production site into `dist/` |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint across the project |
+
+## Project structure
+
+```text
+public/
+  images/                 Portfolio, project, testimonial, and logo images
+src/
+  components/             Page sections and reusable UI components
+  context/                Theme state and theme switching
+  data/                   Project, experience, testimonial, and logo content
+  App.jsx                 Page composition and section anchors
+  App.css                 Global page styling
+  index.css               Tailwind CSS import and dark-mode variant
+```
+
+## Customize the portfolio
+
+- Edit `src/data/projects.js` to change project descriptions, categories, and image paths. The gallery filters are generated from the project categories.
+- Edit `src/data/experiences.js`, `src/data/testimonials.js`, and `src/data/companyLogos.js` to update the experience, recommendations, and logos.
+- Update the name, introduction, profile image, and contact details in the components under `src/components/`.
+- Add or replace images in `public/images/` and reference them using paths such as `/images/projects/project1.jpg`.
+- The downloadable CV link in the hero currently points to `#cv`; replace it with the path to a CV file when one is available.
+
+## Notes
+
+The contact form is currently presentation-only: it has no submit handler or backend integration. Connect it to a service or API before relying on it to receive messages. The portfolio content and contact information are sample content and should be reviewed before publishing.
+
+## License
+
+This project is available under the [MIT License](./LICENSE).
