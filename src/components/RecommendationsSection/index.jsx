@@ -3,6 +3,9 @@ import testimonials from "../../data/testimonials";
 import ArrowNavigation from "./ArrowNavigation";
 import CompanyLogo from "./CompanyLogo";
 import TestimonialCard from "./TestimonialCard";
+import companylogos from "../../data/companyLogos";
+import companyLogos from "../../data/companyLogos";
+import { Key } from "lucide-react";
 
 const RecommendationSection = () => {
     // Set up state to track the current testimonial index
@@ -38,6 +41,15 @@ const RecommendationSection = () => {
             />
 
             {/* Logos */}
+            <div className="flex flex-wrap justify-center gap-10 mt-16">
+                {companyLogos.map((logo, idx) => (
+                    <CompanyLogo
+                        key={idx}
+                        logo={logo}
+                        idx={idx}
+                    />
+                ))}
+            </div>
         </section>
     );
 };
