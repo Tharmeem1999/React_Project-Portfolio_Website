@@ -4,8 +4,12 @@ const ThemeContext = createContext();
 
 export const useTheme = () => useContext(ThemeContext);
 
+// Read theme from localStorage or default to "light"
+const getInitialTheme = () =>
+    localStorage.getItem("theme") || "light";
+
 const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState(getInitialTheme());
 
     // Add the current theme class to the root HTML element to apply global theme styles
     document.documentElement.classList.add(theme)
@@ -18,6 +22,7 @@ const ThemeProvider = ({ children }) => {
             document.documentElement.classList.remove("light", "dark");
             // Add the current theme class
             document.documentElement.classList.add(newTheme);
+            localStorage.setItem("theme", newTheme)
             return newTheme;
         });
     }
