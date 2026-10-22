@@ -60,6 +60,12 @@ src/
   index.css               Tailwind CSS import and dark-mode variant
 ```
 
+## Screenshots
+
+<img width="1517" height="831" alt="Image" src="https://github.com/user-attachments/assets/809d0496-15d7-4d57-bab5-36b9520acbff" />
+<img width="1521" height="835" alt="Image" src="https://github.com/user-attachments/assets/17184857-852f-40a3-8a81-00a3029085e2" />
+<img width="1517" height="925" alt="Image" src="https://github.com/user-attachments/assets/ef5b17dc-bac8-4fe8-b915-4e8e73891da4" />
+
 ## Customize the portfolio
 
 - Edit `src/data/projects.js` to change project descriptions, categories, and image paths. The gallery filters are generated from the project categories.
